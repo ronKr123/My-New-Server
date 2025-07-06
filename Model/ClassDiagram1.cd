@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Model.BaseEntity">
+    <Position X="15.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgA=</HashCode>
+      <FileName>BaseEntity.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Model.Books">
+    <Position X="9.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAACCAIAQAgAAEAAgAAAAAAAAAAAAQAAAAEAAAAAA=</HashCode>
+      <FileName>Books.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Model.BooksList">
+    <Position X="22.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BooksList.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Model.City">
+    <Position X="13.75" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>City.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Model.CityList">
+    <Position X="24.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CityList.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Model.DigitalBooks">
+    <Position X="9.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAACAAAACAAAAAwAAAAAAAAAAAAAAAQAAAA=</HashCode>
+      <FileName>DigitalBooks.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Model.DigitalBooksList">
+    <Position X="26.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DigitalBooksList.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Model.Genre">
+    <Position X="11.75" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAI=</HashCode>
+      <FileName>Genre.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Model.GenreList">
+    <Position X="22.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GenreList.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Model.LendingAndReturnsBooks">
+    <Position X="20.25" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAEAAEAAAAAAQAAAACAAAAAAAAAAAAAAACAAAABBA=</HashCode>
+      <FileName>LendingAndReturnsBooks.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Model.LendingAndReturnsBooksList">
+    <Position X="24.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>LendingAndReturnsBooksList.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Model.MangerLibrary">
+    <Position X="18" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BBAAAAAAAAAAAAAAABAAAAAAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MangerLibrary.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Model.MangerLibraryList">
+    <Position X="26.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MangerLibraryList.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Model.Person">
+    <Position X="18" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAEAAAABAAAAAAAAAAAAAAAAQAAAAAAAACAAAAAg=</HashCode>
+      <FileName>Person.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Model.PersonList">
+    <Position X="24.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>PersonList.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Model.UsersList">
+    <Position X="22.75" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>UsersList.cs</FileName>
+      <NewMemberFileName>Users.cs</NewMemberFileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Model.Writers">
+    <Position X="20" Y="5.75" Width="1.5" />
+    <InheritanceLine Type="Model.Person" FixedToPoint="true">
+      <Path>
+        <Point X="18.75" Y="4.704" />
+        <Point X="18.75" Y="5.004" />
+        <Point X="20.438" Y="5.004" />
+        <Point X="20.438" Y="5.75" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAIAAAACAAAAAAAAAABAA=</HashCode>
+      <FileName>Writers.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Model.WritersList">
+    <Position X="26.25" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>WritersList.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
