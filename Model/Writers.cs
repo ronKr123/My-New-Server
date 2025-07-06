@@ -8,14 +8,10 @@ namespace Model
 {
     public class Writers: Person
     {
-        private Genre genreWriting;
+		public Genre GenreWriting { get; set; } = null!; // או אפשר לשים GenreWriting? אם יכול להיות ריק
+		public string LinkToBiography { get; set; } = string.Empty;
 
-        private string linkToBiography;
-
-        public Genre GenreWriting { get => genreWriting; set => genreWriting = value; }
-        public string LinkToBiography { get => linkToBiography; set => linkToBiography = value; }
-
-    }
+	}
 
 
 }

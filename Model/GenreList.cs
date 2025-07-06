@@ -8,12 +8,12 @@ namespace Model
 {
     public class GenreList: List<Genre>
     {
-        public GenreList() { }
+		public GenreList() : base() { }
 
-        public GenreList(IEnumerable<Genre> list) : base(list) { }
+		public GenreList(IEnumerable<Genre> list) : base(list) { }
 
-        public GenreList(IEnumerable<BaseEntity> list) : base(list.Cast<Genre>().ToList()) { }
+		public GenreList(IEnumerable<BaseEntity> list) : base(list.OfType<Genre>()) { }
 
 
-    }
+	}
 }

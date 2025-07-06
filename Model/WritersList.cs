@@ -8,13 +8,12 @@ namespace Model
 {
     public class WritersList: List<Writers>
     {
-        public WritersList() { }
+		public WritersList() { }
 
-        public WritersList(IEnumerable<Writers> list) : base(list) { }
+		public WritersList(IEnumerable<Writers> list) : base(list) { }
 
-        public WritersList(IEnumerable<BaseEntity> list) : 
-            base(list.Cast<Writers>().ToList()) { }
+		public WritersList(IEnumerable<BaseEntity> list) : base(list.OfType<Writers>()) { }
 
-    }
+	}
 }
 

@@ -8,15 +8,9 @@ namespace Model
 {
     public class Person: BaseEntity
     {
-        private string firstName;
+		public string FirstName { get; set; } = string.Empty;
+		public string LastName { get; set; } = string.Empty;
+		public DateTime DateOfBirth { get; set; }
 
-        private string lastName;
-
-        private DateTime dateOfBirth;
-       
-        public string FirstName { get => firstName; set => firstName = value; }
-        public string LastName { get => lastName; set => lastName = value; }
-        public DateTime DateOfBirth { get => dateOfBirth; set => dateOfBirth = value; }
-
-    }
+	}
 }

@@ -8,9 +8,7 @@ namespace Model
 {
     public class Genre : BaseEntity
     {
-       private string genreName;
 
-       public string GenreName { get => genreName; set => genreName = value; }
-
-    }
+		public string GenreName { get; set; } = string.Empty;
+	}
 }

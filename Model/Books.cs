@@ -8,25 +8,17 @@ namespace Model
 {
     public class Books: BaseEntity
     {
-        private string bookName;
+		public string BookName { get; set; } = string.Empty;
 
-        private Genre genreCode;
+		public Genre GenreCode { get; set; } = new Genre();
 
-        private Writers writerCode;
+		public Writers WriterCode { get; set; } = new Writers();
 
-        private string pictureBook;
-        
-        private DateTime dateOfPublishBook;
-        
-        private string bookPic;
-        
+		public string PictureBook { get; set; } = string.Empty;
 
-        public string BookName { get => bookName; set => bookName = value; }
-        public Genre GenreCode { get => genreCode; set => genreCode = value; }
-        public Writers WriterCode { get => writerCode; set => writerCode = value; }
-        public string PictureBook { get => pictureBook; set => pictureBook = value; }
-        public DateTime DateOfPublishBook { get => dateOfPublishBook; set => dateOfPublishBook = value; }
-        public string BookPic { get => bookPic; set => bookPic = value; }
+		public DateTime DateOfPublishBook { get; set; } = DateTime.Now;
 
-    }
+		public string BookPic { get; set; } = string.Empty;
+
+	}
 }

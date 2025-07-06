@@ -8,11 +8,11 @@ namespace Model
 {
     public class CityList: List<City>
     {
-        public CityList() { }
+		public CityList() : base() { }
 
-        public CityList(IEnumerable<City> list) : base(list) { }
+		public CityList(IEnumerable<City> list) : base(list) { }
 
-        public CityList(IEnumerable<BaseEntity> list) : base(list.Cast<City>().ToList()) { }
+		public CityList(IEnumerable<BaseEntity> list) : base(list.OfType<City>()) { }
 
-    }
+	}
 }

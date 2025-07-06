@@ -9,12 +9,12 @@ namespace Model
 {
     public class UsersList : List<Users>
     {
-        public UsersList() { }
+		public UsersList() { }
 
-        public UsersList(IEnumerable<Users> list) : base(list) { }
+		public UsersList(IEnumerable<Users> list) : base(list) { }
 
-        public UsersList(IEnumerable<BaseEntity> list) : base(list.Cast<Users>().ToList()) { }
+		public UsersList(IEnumerable<BaseEntity> list) : base(list.OfType<Users>()) { }
 
 
-    }
+	}
 }

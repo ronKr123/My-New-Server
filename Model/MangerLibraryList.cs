@@ -8,11 +8,11 @@ namespace Model
 {
     public class MangerLibraryList: List<MangerLibrary>
     {
-        public MangerLibraryList() { }
+		public MangerLibraryList() : base() { }
 
-        public MangerLibraryList(IEnumerable<MangerLibrary> list) : base(list) { }
+		public MangerLibraryList(IEnumerable<MangerLibrary> list) : base(list) { }
 
-        public MangerLibraryList(IEnumerable<BaseEntity> list) : base(list.Cast<MangerLibrary>().ToList()) { }
+		public MangerLibraryList(IEnumerable<BaseEntity> list) : base(list.OfType<MangerLibrary>()) { }
 
-    }
+	}
 }

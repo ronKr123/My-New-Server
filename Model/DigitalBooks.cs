@@ -8,15 +8,11 @@ namespace Model
 {
     public class DigitalBooks: Books
     {
-        private string bookAudioFile;
+		public string BookAudioFile { get; set; } = string.Empty;
 
-        private int duration;
+		public int Duration { get; set; }
 
-        private string audioPath;
+		public string AudioPath { get; set; } = string.Empty;
 
-        public string BookAudioFile { get => bookAudioFile; set => bookAudioFile = value; }
-        public int Duration { get => duration; set => duration = value; }
-        public string AudioPath { get => audioPath; set => audioPath = value; }
-
-    }
+	}
 }

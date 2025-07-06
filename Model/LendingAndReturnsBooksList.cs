@@ -8,11 +8,11 @@ namespace Model
 {
     public class LendingAndReturnsBooksList : List<LendingAndReturnsBooks>
     {
-        public LendingAndReturnsBooksList() { }
+		public LendingAndReturnsBooksList() : base() { }
 
-        public LendingAndReturnsBooksList(IEnumerable<LendingAndReturnsBooks> list) : base(list) { }
+		public LendingAndReturnsBooksList(IEnumerable<LendingAndReturnsBooks> list) : base(list) { }
 
-        public LendingAndReturnsBooksList(IEnumerable<BaseEntity> list) : base(list.Cast<LendingAndReturnsBooks>().ToList()) { }
+		public LendingAndReturnsBooksList(IEnumerable<BaseEntity> list) : base(list.OfType<LendingAndReturnsBooks>()) { }
 
-    }
+	}
 }

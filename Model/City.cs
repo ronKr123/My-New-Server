@@ -8,9 +8,6 @@ namespace Model
 {
     public class City : BaseEntity
     {
-       
-        private string cityName;
-
-       public string CityName { get => cityName; set => cityName = value; }
-    }
+		public string CityName { get; set; } = string.Empty;
+	}
 }

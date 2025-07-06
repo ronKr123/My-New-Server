@@ -8,12 +8,8 @@ namespace Model
 {
     public class MangerLibrary: Person
     {
-        private string mangerUserName;
+		public string MangerUserName { get; set; } = string.Empty;
+		public string MangerPass { get; set; } = string.Empty;
 
-        private string mangerPass;
-
-        public string MangerUserName { get => mangerUserName; set => mangerUserName = value; }
-        public string MangerPass { get => mangerPass; set => mangerPass = value; }
-
-    }
+	}
 }

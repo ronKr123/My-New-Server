@@ -9,16 +9,11 @@ namespace Model
     public class LendingAndReturnsBooks: BaseEntity
     {
 
-        private Users userCode;
-        private Books bookCode;
-        private DateTime dateOfLending;
-        private DateTime dateOfReturn;
-        
-        public Users UserCode { get => userCode; set => userCode = value; }
-        public Books BookCode { get => bookCode; set => bookCode = value; }
-        public DateTime DateOfLending { get => dateOfLending; set => dateOfLending = value; }
-        public DateTime DateOfReturn { get => dateOfReturn; set => dateOfReturn = value; }
+		public Users UserCode { get; set; } = null!; // null! כדי להודיע לקומפיילר שזה יאותחל במקומות אחרים
+		public Books BookCode { get; set; } = null!;
+		public DateTime DateOfLending { get; set; }
+		public DateTime DateOfReturn { get; set; }
 
 
-    }
+	}
 }

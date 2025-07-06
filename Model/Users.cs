@@ -8,25 +8,12 @@ namespace Model
 {
     public class Users :  Person
     {
-        private City cityCode;
+		public City CityCode { get; set; } = null!; // או אתחל לפי הצורך
+		public string UserName { get; set; } = string.Empty;
+		public string UserPassword { get; set; } = string.Empty;
+		public string Email { get; set; } = string.Empty;
+		public string PhoneNumber { get; set; } = string.Empty;
+		public BooksList FavoriteBooksList { get; set; } = new BooksList();
 
-        private string userName;
-
-        private string userPassword; 
-
-        private string email;   
-
-        private string phoneNumber;
-
-        private BooksList favoriteBooksList;
-        
-
-        public string UserName { get => userName; set => userName = value; }
-        public string Email { get => email; set => email = value; }
-        public string PhoneNumber { get => phoneNumber; set => phoneNumber = value; }
-        public City CityCode { get => cityCode; set => cityCode = value; }
-        public string UserPassword { get => userPassword; set => userPassword = value; }
-        public BooksList FavoriteBooksList { get => favoriteBooksList; set => favoriteBooksList = value; }
-
-    }
+	}
 }

@@ -8,11 +8,12 @@ namespace Model
 {
     public class BooksList: List<Books>
     {
-        public BooksList() { }
+		public BooksList() : base() { }
 
-        public BooksList(IEnumerable<Books> list) : base(list) { }
+		public BooksList(IEnumerable<Books> list) : base(list) { }
 
-        public BooksList(IEnumerable<BaseEntity> list) : base(list.Cast<Books>().ToList()) { }
+		public BooksList(IEnumerable<BaseEntity> list)
+			: base(list.OfType<Books>()) { }
 
-    }
+	}
 }
